@@ -61,7 +61,7 @@ public class ConvertorMain implements IGetFilePath {
 				
 				for (int i = 0; i < pdfFile.length; i++) {
 
-					String fileName = destFile.getAbsolutePath() + "/" + "signed_" +pdfFile[i].getName();
+					String fileName = destFile.getAbsolutePath() + "/"  +pdfFile[i].getName();
 
 					signPdf.signFile(pdfFile[i].getAbsolutePath(), fileName, selectedPfxFilePath2, password2);
 				}
