@@ -1,9 +1,6 @@
 package com.practice;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ComparatorImplementation {
 
@@ -25,18 +22,15 @@ public class ComparatorImplementation {
         SubStudent subStu2 =new SubStudent(1,"raju");
         SubStudent subStu3 =new SubStudent(2,"raju");
 
-
-
         List<StudentComparator> arrList = new ArrayList<>();
 
-        studentOne = new StudentComparator(1,"Vaibhav",subStu2);
-        studentTwo = new StudentComparator(1,"Sulabh",subStu3);
-        studentThree = new StudentComparator(3,"Amar",subStu1);
-
+        studentOne = new StudentComparator(4,"Vaibhav",subStu2);
+        studentTwo = new StudentComparator(3,"Sulabh",subStu3);
+//        studentThree = new StudentComparator(2,"Amar",subStu1);
 
         arrList.add(studentOne);
         arrList.add(studentTwo);
-        arrList.add(studentThree);
+//        arrList.add(studentThree);
 
         Collections.sort(arrList,new StudentComparator());
 
@@ -60,7 +54,7 @@ public class ComparatorImplementation {
          *
          */
 
-        Collections.sort(arrList,new StudentComparator().thenComparing(new StudentStringComparator().reversed()));
+        Collections.sort(arrList,new StudentComparator());
 
 
         /**

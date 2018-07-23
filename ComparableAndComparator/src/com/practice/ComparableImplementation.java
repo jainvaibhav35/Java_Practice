@@ -3,6 +3,7 @@ package com.practice;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.TreeMap;
 
 public class ComparableImplementation{
 
@@ -30,6 +31,9 @@ public class ComparableImplementation{
         studentThree = new Student(3,"Amar",subStu1);
         studentOne = new Student(2,"Vaibhav",subStu2);
         studentTwo = new Student(1,"Sulabh",subStu3);
+
+        TreeMap<Student,String> d = new TreeMap<>();
+        d.put(studentOne,"");
 
 
         arrList.add(studentOne);

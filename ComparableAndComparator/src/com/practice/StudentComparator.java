@@ -49,13 +49,21 @@ public class StudentComparator implements Comparator{
     @Override
     public int compare(Object o1, Object o2) {
 
+//        if(((StudentComparator)o2).getRollNo() > ((StudentComparator)o1).getRollNo()){
+//            return 1 ;
+//        }
+//        else if(((StudentComparator)o1).getRollNo() > ((StudentComparator)o2).getRollNo()){
+//            return -1 ;
+//        }else
+//            return 0;
+
+
         if(((StudentComparator)o1).getRollNo() < ((StudentComparator)o2).getRollNo()){
             return -1 ;
         }
         else if(((StudentComparator)o1).getRollNo() > ((StudentComparator)o2).getRollNo()){
-            return 1 ;
+            return -1 ;
         }else
             return 0;
-
     }
 }
